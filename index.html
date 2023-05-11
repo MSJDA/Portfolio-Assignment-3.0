@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./main.js"></script>
+    <script src="https://kit.fontawesome.com/b190f9a589.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- header with links to every section of the page -->
+    <header class="header">
+        <div class="sub-header">
+            <h1 class="name">MSJ</h1>
+            <nav class="nav">
+                <a class="link" href="#About">About</a>
+                <a class="link" href="#project">Projects</a>
+                <a class="link" href="#skill">Skill</a>
+                <a class="link" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- the body of the portfolio -->
+    <main>
+        <!-- the about section of the portfolio -->
+        <section id="About" class="about">
+            <div class="intro">
+                <div class="my-name">
+                    <h1>Hello, I'm Muhammed<br>A prospective Software Engineer</h1>
+                    <p> A graduate of Mechanical Enginering from the University of Ilorin <br> TIIDELAB prefellowship student with prospect in Software Engineering</p>
+                </div>
+                <div class="section-link">
+                    <a class="contact-link" href="#contact">Work with me</a>
+                    <a class="project-link" href="#project">See my past work</a>
+                </div>
+                <div class="image">
+                    
+                <img class="Personal-image" src="./image/pic.jpg" alt="Personal image" width="400px" height="400px">
+                </div>
+            </div>
+        </section>
+
+        <div class="update">
+            <h1 class="text" id="text-1">I am currently learning HTML and CSS</h1>
+            <h1 class="text-r" id="text-2">I am currently learning Javascript</h1>
+            <button id="btn">Update me</button>
+        </div>
+        <!-- Section with a link to my previous work on my github Repository -->
+        <section id="project" class="project">
+            <div class="sub-project">
+                <div class="project-head">
+                    <h1>Project</h1>
+                    <p>These are my past work</p>
+                </div>
+                
+                <div class="git-link">
+                    <a href="https://github.com/MSJDA/TodoList">
+                        <div class="repo-link">
+                            <img src="./image/todolist.jpg" alt="todolist">
+                            <div class="sub-git">
+                                <h4>TodoList</h4>
+                                <p>Check out my work on making a TodoList</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/MSJDA/ShareBenefit">
+                        <div class="repo-link">
+                            <img src="./image/Figma.png" alt="pay">
+                            <div class="sub-git">
+                                <h4>Payment Web Page</h4>
+                                <p>Check out my work on a payment website using HTML and CSS</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section listing my skills -->
+        <section id="skill" >
+            <div class="skill">
+                <div class="skill-title">
+                    <h1>Skills</h1>
+                </div>
+                <div class="subskill">
+                    <div class="skillset">
+                        <img src="./image/icons8-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-96.png" alt="">
+                        <h4>HTML</h4>
+                    </div>
+                    <div class="skillset">
+                        <img src="./image/icons8-css3-96.png" alt="">
+                        <h4>CSS</h4>
+                    </div>
+                    <div class="skillset">
+                        <img src="./image/icons8-matlab-96.png" alt="">
+                        <h4>MATLAB</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section contains my contact details with links to my social media handles -->
+        <div id="contact" class="contact">
+            <div class="details">
+                <div class="contact-detail">
+                    <div class="address">
+                        <h2>ADDRESS</h2>
+                        <p>Ilorin East, <br /> Ilorin, KW 240001, Nigeria.</p>
+                    </div>
+                    <div class="personal-detail">
+                        <h2>PHONE</h2>
+                        <a  href="tel:+2348108352918"><i class="fa-solid fa-phone fa-xl"></i>+234 81 0835 2318</a>
+                        <h2>EMAIL</h2>
+                        <a  href="mailto:salaumuhammedsalihujimoh@gmail.com"><i class="fa-solid fa-envelope fa-xl"></i>salaumuhammedsalihujimoh@gmail.com</a>
+                        <h2>SOCIAL MEDIA</h2>
+                        <a  href="https://www.linkedin.com/in/muhammed-salihu-jimoh/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                        <a  href="https://twitter.com/MuhammedsalihuJ"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="https://github.com/MSJDA"><i class="fa-brands fa-square-github fa-xl"></i></a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form for clients to request for my services -->
+            <form action="submit" class="form">
+                <h2>HIRE ME</h2>
+                <p>Let's Discuss Business</p>
+                <div class="col">
+                    <label for="name">Name</label>
+                    <input id="name" type="text"  required>
+                </div>
+                <div class="col">
+                    <label for="Email">Email</label>
+                <input id="Email" type="text"  required>
+                </div>
+                <div class="col">
+                    <label for="Message">Message</label>
+                    <textarea type="text" id="Message"  required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <h3 class="copyright">&copy; Copyright MSJ 2023</h3>
+    </footer>
+</body>
+</html>
